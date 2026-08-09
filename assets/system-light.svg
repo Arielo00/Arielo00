@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">ARIEL RESEARCH SYSTEM</title>
+  <desc id="desc">A light research-paper-style profile for Ariel López García.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f5ed"/>
+      <stop offset="1" stop-color="#eee9dc"/>
+    </linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".65" fill="#162b35" fill-opacity=".075"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1e2a31" flood-opacity=".09"/>
+    </filter>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+      .serif{font-family:Georgia,"Times New Roman",serif}
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+      .ink{fill:#172c35}.muted{fill:#667176}.teal{fill:#147c78}.brass{fill:#9a6d2f}
+      .key{fill:#6f7778}.value{fill:#263b43}
+      .pulse{animation:pulse 3.4s ease-in-out infinite;transform-origin:1058px 69px}
+      .cursor{animation:blink 1.2s steps(1,end) infinite}
+      .orbit{animation:drift 16s linear infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes pulse{0%,100%{opacity:.5;transform:scale(.82)}50%{opacity:1;transform:scale(1.1)}}
+      @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
+      @keyframes drift{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.orbit{animation:none}.cursor{opacity:1}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="24" fill="#ddd7c8"/>
+  <rect x="18" y="16" width="1164" height="726" rx="16" fill="url(#paper)" filter="url(#shadow)"/>
+  <rect x="42" y="40" width="1116" height="678" rx="4" fill="url(#dots)" stroke="#bdb6a8"/>
+  <path d="M42 112H1158" stroke="#bdb6a8"/>
+  <path d="M782 112V718" stroke="#c8c1b4"/>
+  <path d="M58 128V702" stroke="#b65f4b" stroke-opacity=".24"/>
+
+  <g class="mono">
+    <text x="68" y="72" class="brass" font-size="13" font-weight="700" letter-spacing="3.2">ARIEL RESEARCH SYSTEM</text>
+    <text x="68" y="94" class="muted" font-size="11" letter-spacing="1.7">ARIEL OS · build 26.08</text>
+    <circle cx="1058" cy="69" r="4" class="teal pulse"/>
+    <text x="1072" y="73" class="teal" font-size="10" letter-spacing="2">ONLINE</text>
+
+    <text x="68" y="158" class="teal" font-size="15">&gt; whoami</text>
+    <text x="68" y="205" class="ink serif" font-size="31">Ariel López García</text>
+    <path d="M68 218H395" stroke="#9a6d2f" stroke-width="2"/>
+    <text x="68" y="240" class="muted" font-size="10" letter-spacing="2.5">OBSERVER · BUILDER · PERMANENT STUDENT</text>
+
+    <text x="68" y="287" class="value serif" font-size="17" font-style="italic">
+      <tspan x="68" dy="0">I like understanding systems from first principles,</tspan>
+      <tspan x="68" dy="26">building things, and following questions further</tspan>
+      <tspan x="68" dy="26">than I probably intended to.</tspan>
+    </text>
+
+    <text x="68" y="390" class="teal" font-size="15">&gt; ./ariel --info</text>
+    <g font-size="14">
+      <text x="68" y="430" class="key">default_mode</text><text x="260" y="430" class="value">curious</text>
+      <text x="68" y="458" class="key">rabbit_holes</text><text x="260" y="458" class="value">enabled</text>
+      <text x="68" y="486" class="key">side_quests</text><text x="260" y="486" class="value">always</text>
+      <text x="68" y="514" class="key">black_boxes</text><text x="260" y="514" class="value">inspect()</text>
+      <text x="68" y="542" class="key">favorite_question</text><text x="260" y="542" class="value">"why?"</text>
+      <text x="68" y="570" class="key">debugging_mode</text><text x="260" y="570" class="value">evidence &gt; intuition</text>
+      <text x="68" y="598" class="key">tabs_open</text><text x="260" y="598" class="brass">[REDACTED]</text>
+      <text x="68" y="626" class="key">music</text><text x="260" y="626" class="value">always_on</text>
+      <text x="68" y="654" class="key">learning_state</text><text x="260" y="654" class="value">permanent</text>
+      <text x="68" y="682" class="key">certainty</text><text x="260" y="682" class="value">probabilistic</text>
+    </g>
+    <text x="68" y="710" class="teal" font-size="14">curiosity</text>
+    <text x="260" y="710" class="teal" font-size="14">unbounded</text>
+    <rect x="354" y="698" width="8" height="15" class="teal cursor"/>
+  </g>
+
+  <g transform="translate(816 148)">
+    <text x="0" y="0" class="mono muted" font-size="9" letter-spacing="2">FIG. 01 — A QUESTION, OBSERVED</text>
+    <circle cx="158" cy="168" r="119" fill="#f4f0e6" stroke="#9eaaac" stroke-width="1"/>
+    <circle cx="158" cy="168" r="82" fill="none" stroke="#147c78" stroke-opacity=".36" stroke-dasharray="1 8"/>
+    <g class="orbit">
+      <ellipse cx="158" cy="168" rx="144" ry="51" fill="none" stroke="#9a6d2f" stroke-opacity=".55" transform="rotate(-18 158 168)"/>
+      <circle cx="28" cy="222" r="4" fill="#9a6d2f"/>
+    </g>
+    <path d="M47 90L107 47L205 62L270 134L251 233L162 288L73 249L47 90Z" fill="none" stroke="#172c35" stroke-opacity=".16"/>
+    <g fill="#147c78">
+      <circle cx="47" cy="90" r="3"/><circle cx="107" cy="47" r="2"/><circle cx="205" cy="62" r="3"/>
+      <circle cx="270" cy="134" r="2"/><circle cx="251" cy="233" r="3"/><circle cx="162" cy="288" r="2"/><circle cx="73" cy="249" r="2"/>
+    </g>
+    <circle cx="158" cy="168" r="9" fill="#9a6d2f"/>
+    <path d="M158 151V100M175 168H226M158 185V236M141 168H90" stroke="#9a6d2f" stroke-opacity=".38"/>
+    <text x="158" y="339" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION SPACE // UNBOUNDED</text>
+  </g>
+
+  <g class="mono" font-size="9" fill="#667176" letter-spacing="1.5">
+    <text x="818" y="585">OBSERVE</text><text x="955" y="585">MODEL</text><text x="1080" y="585">TEST</text>
+    <path d="M818 603H1136" stroke="#a9a294"/>
+    <circle cx="828" cy="603" r="3" fill="#147c78"/><circle cx="965" cy="603" r="3" fill="#9a6d2f"/><circle cx="1090" cy="603" r="3" fill="#147c78"/>
+    <text x="818" y="642">MARGIN NOTE</text>
+    <text x="818" y="670" fill="#32464d" font-size="12" letter-spacing=".4">one question away from</text>
+    <text x="818" y="690" fill="#32464d" font-size="12" letter-spacing=".4">another rabbit hole</text>
+  </g>
+</svg>

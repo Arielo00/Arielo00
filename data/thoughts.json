@@ -1,0 +1,295 @@
+[
+  {
+    "id": "feynman-create",
+    "kind": "quotation",
+    "text": "What I cannot create, I do not understand.",
+    "author": "Richard P. Feynman",
+    "source": "Final blackboard at Caltech (1988)",
+    "source_url": "https://calteches.library.caltech.edu/684/2/Feynman.pdf"
+  },
+  {
+    "id": "turing-distance",
+    "kind": "quotation",
+    "text": "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
+    "author": "Alan M. Turing",
+    "source": "Computing Machinery and Intelligence (1950)",
+    "source_url": "https://doi.org/10.1093/mind/LIX.236.433"
+  },
+  {
+    "id": "lovelace-patterns",
+    "kind": "quotation",
+    "text": "We may say most aptly that the Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.",
+    "author": "Ada Lovelace",
+    "source": "Notes on the Analytical Engine (1843)",
+    "source_url": "https://www.fourmilab.ch/babbage/sketch.html"
+  },
+  {
+    "id": "newton-giants",
+    "kind": "quotation",
+    "text": "If I have seen further it is by standing on the shoulders of Giants.",
+    "author": "Isaac Newton",
+    "source": "Letter to Robert Hooke (1675)",
+    "source_url": "https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00272"
+  },
+  {
+    "id": "franklin-everyday",
+    "kind": "quotation",
+    "text": "Science and everyday life cannot and should not be separated.",
+    "author": "Rosalind Franklin",
+    "source": "Letter to Ellis Franklin (1940), quoted by Brenda Maddox",
+    "source_url": "https://quotle.info/who-said/science-and-everyday-life-cannot-and-should-not-be-separated/"
+  },
+  {
+    "id": "curie-understood",
+    "kind": "quotation",
+    "text": "Nothing in life is to be feared, it is only to be understood.",
+    "author": "Marie Curie",
+    "source": "Quoted by the Nobel Foundation, Annual Review 2024",
+    "source_url": "https://www.nobelprize.org/uploads/2025/04/annual-review-2024.pdf"
+  },
+  {
+    "id": "haldane-queerer",
+    "kind": "quotation",
+    "text": "The universe is not only stranger than we suppose, but stranger than we can suppose.",
+    "author": "J. B. S. Haldane",
+    "source": "Possible Worlds and Other Essays (1927)",
+    "source_url": "https://archive.org/details/possibleworldsot00hald"
+  },
+  {
+    "id": "darwin-ignorance",
+    "kind": "quotation",
+    "text": "Ignorance more frequently begets confidence than does knowledge.",
+    "author": "Charles Darwin",
+    "source": "The Descent of Man (1871)",
+    "source_url": "https://www.gutenberg.org/ebooks/2300"
+  },
+
+  {
+    "id": "coffee-hypothesis",
+    "kind": "original",
+    "text": "Coffee is not a research method, but it has attended a suspicious number of discoveries.",
+    "author": "Anonymous",
+    "source": "Creative field note",
+    "source_url": null
+  },
+  {
+    "id": "original-drawer",
+    "kind": "original",
+    "text": "Every well-organized drawer is a local victory over entropy and a temporary one.",
+    "author": "ARIEL RESEARCH SYSTEM",
+    "source": "Creative field note",
+    "source_url": null
+  },
+  {
+    "id": "feynman-first-principle",
+    "kind": "quotation",
+    "text": "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
+    "author": "Richard P. Feynman",
+    "source": "Cargo Cult Science, Caltech commencement address (1974)",
+    "source_url": "https://calteches.library.caltech.edu/51/2/CargoCult.htm"
+  },
+  {
+    "id": "lee-research-experience",
+    "kind": "quotation",
+    "text": "Research your own experience. Absorb what is useful, reject what is useless, add what is essentially your own.",
+    "author": "Bruce Lee",
+    "source": "Research Your Own Experience, Bruce Lee official archive",
+    "source_url": "https://brucelee.com/podcast-blog/2017/9/12/63-research-your-own-experience"
+  },
+ 
+  {
+    "id": "einstein-questioning",
+    "kind": "quotation",
+    "text": "The important thing is not to stop questioning. Curiosity has its own reason for existing.",
+    "author": "Albert Einstein",
+    "source": "Statement to William Miller, LIFE (2 May 1955)",
+    "source_url": "https://history.aip.org/exhibits/einstein/ae77.htm"
+  },
+  {
+    "id": "oppenheimer-scientist-teach-paraphrase",
+    "kind": "quotation",
+    "text": "The scientist must not merely find and communicate new truth, but teach and bring an honest, intelligible account of knowledge to all who try to learn.",
+    "author": "J. Robert Oppenheimer",
+    "source": "Uncommon Sense (ed. 2013)",
+    "source_url": "https://libquotes.com/j-robert-oppenheimer/quote/lba8b2a"
+  },
+  {
+    "id": "galileo-grand-book",
+    "kind": "quotation",
+    "text": "Philosophy is written in this grand book, the universe, which stands continually open to our gaze.",
+    "author": "Galileo Galilei",
+    "source": "The Assayer (1623), translated by Stillman Drake",
+    "source_url": "https://gal-studies.museogalileo.it/index.php/galilaeana/article/view/21"
+  },
+  {
+    "id": "tesla-invention",
+    "kind": "quotation",
+    "text": "The progressive development of man is vitally dependent on invention.",
+    "author": "Nikola Tesla",
+    "source": "My Inventions (1919), chapter 1",
+    "source_url": "https://www.rastko.rs/istorija/tesla/ntesla-autobiography.html"
+  },
+  {
+    "id": "leonardo-practice-theory",
+    "kind": "quotation",
+    "text": "He who loves practice without theory is like the sailor who boards ship without a rudder and compass and never knows where he may cast.",
+    "author": "Leonardo da Vinci",
+    "source": "The Notebooks of Leonardo da Vinci, translated by Edward MacCurdy",
+    "source_url": "https://mathshistory.st-andrews.ac.uk/Biographies/Leonardo/quotations/"
+  },
+  {
+    "id": "descartes-good-mind",
+    "kind": "quotation",
+    "text": "It is not enough to have a good mind. The main thing is to use it well.",
+    "author": "René Descartes",
+    "source": "Discourse on the Method, part I (1637)",
+    "source_url": "https://en.wikiquote.org/wiki/Discourse_on_the_Method"
+  },
+  {
+    "id": "asimov-knowledge-wisdom",
+    "kind": "quotation",
+    "text": "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.",
+    "author": "Isaac Asimov",
+    "source": "The Roving Mind, Creationism and the Schools (1983)",
+    "source_url": "https://en.wikiquote.org/wiki/Isaac_Asimov"
+  },
+  {
+    "id": "sagan-cosmos-knows",
+    "kind": "quotation",
+    "text": "We are a way for the cosmos to know itself.",
+    "author": "Carl Sagan",
+    "source": "Cosmos: A Personal Voyage (1980)",
+    "source_url": "https://blogs.loc.gov/loc/2014/01/finding-our-place-in-the-cosmos-with-carl-sagan/"
+  },
+
+  {
+    "id": "leibniz-secret-arithmetic",
+    "kind": "quotation",
+    "text": "Music is a secret exercise of arithmetic where the mind is unaware that it is counting.",
+    "author": "Gottfried Wilhelm Leibniz",
+    "source": "Letter to Christian Goldbach (17 April 1712)",
+    "source_url": "https://www.leibniz-translations.com/goldbach1712"
+  },
+  {
+    "id": "archimedes-place-to-stand",
+    "kind": "quotation",
+    "text": "Give me a place to stand, and I shall move the world.",
+    "author": "Archimedes",
+    "source": "Attributed by Pappus of Alexandria, Collection, book VIII",
+    "source_url": "https://www.quotescosmos.com/quotes/Archimedes-quote-1.html"
+  },
+  {
+    "id": "fermat-marvelous-proof",
+    "kind": "quotation",
+    "text": "I have discovered a truly marvelous proof of this, which this margin is too narrow to contain.",
+    "author": "Pierre de Fermat",
+    "source": "Marginal note in Diophantus's Arithmetica (c. 1637)",
+    "source_url": "https://www.ias.edu/ideas/research-margins"
+  },
+  {
+    "id": "kant-content-concepts",
+    "kind": "quotation",
+    "text": "Thoughts without content are empty, intuitions without concepts are blind.",
+    "author": "Immanuel Kant",
+    "source": "Critique of Pure Reason, A51/B75",
+    "source_url": "https://plato.stanford.edu/entries/kant-judgment/supplement1.html"
+  },
+  {
+    "id": "nietzsche-why-how",
+    "kind": "quotation",
+    "text": "He who has a why to live for can bear with almost any how.",
+    "author": "Friedrich Nietzsche",
+    "source": "Twilight of the Idols, Maxims and Arrows, §12 (1888)",
+    "source_url": "https://libquotes.com/friedrich-nietzsche/quote/lbb3o4d"
+  },
+  {
+    "id": "aurelius-transformation",
+    "kind": "quotation",
+    "text": "The universe is transformation: life is opinion.",
+    "author": "Marcus Aurelius",
+    "source": "Meditations, book IV, §3, translated by George Long",
+    "source_url": "https://readaurelius.org/"
+  },
+  {
+    "id": "sophocles-terrible-knowledge",
+    "kind": "quotation",
+    "text": "Ah! terrible is knowledge to the man whom knowledge profits not.",
+    "author": "Sophocles",
+    "source": "Oedipus Tyrannus, translated by Lewis Campbell",
+    "source_url": "https://www.gutenberg.org/files/14484/14484-h/14484-h.htm"
+  },
+  {
+    "id": "aristotle-desire-to-know",
+    "kind": "quotation",
+    "text": "All men by nature desire to know.",
+    "author": "Aristotle",
+    "source": "Metaphysics, book I, 980a21",
+    "source_url": "https://academic.oup.com/book/26862/chapter-abstract/195893926"
+  },
+  {
+    "id": "cicero-not-for-ourselves",
+    "kind": "quotation",
+    "text": "We are not born for ourselves alone, but our country claims a share of our being, and our friends a share.",
+    "author": "Marcus Tullius Cicero",
+    "source": "De Officiis, book I, §22 (after Plato)",
+    "source_url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/1B%2A.html"
+  },
+  {
+    "id": "seneca-imagination-reality",
+    "kind": "quotation",
+    "text": "We suffer more often in imagination than in reality.",
+    "author": "Seneca",
+    "source": "Moral Letters to Lucilius, letter 13, §4, translated by R. M. Gummere",
+    "source_url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_13"
+  },
+  
+  {
+    "id": "aquinas-truth-of-things",
+    "kind": "quotation",
+    "text": "The study of philosophy is not that we may know what men have thought, but what the truth of things is.",
+    "author": "Thomas Aquinas",
+    "source": "Commentary on Aristotle's De Caelo, book I, lecture 22",
+    "source_url": "https://aquinas.cc/la/en/~DeCaelo.Bk1.L22.n228"
+  },
+  {
+    "id": "hume-belief-evidence",
+    "kind": "quotation",
+    "text": "A wise man, therefore, proportions his belief to the evidence.",
+    "author": "David Hume",
+    "source": "An Enquiry Concerning Human Understanding, section X (1748)",
+    "source_url": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/c868ce81-d762-46be-8749-a7daef24123a/content"
+  },
+  {
+    "id": "hegel-owl-minerva",
+    "kind": "quotation",
+    "text": "The owl of Minerva spreads its wings only with the falling of the dusk.",
+    "author": "G. W. F. Hegel",
+    "source": "Elements of the Philosophy of Right, preface (1820)",
+    "source_url": "https://quotepark.com/quotes/889384-georg-wilhelm-friedrich-hegel-the-owl-of-minerva-takes-its-flight-only-when-the/"
+  },
+
+ {
+   "id": "chomsky-freedom-possibility",
+   "kind": "quotation",
+   "text": "If you assume that there is an instinct for freedom, that there are opportunities to change things, then there is a possibility that you can contribute to making a better world.",
+   "author": "Noam Chomsky",
+   "source": "Latin America: From Colonization to Globalization (1999)",
+   "source_url": "https://libquotes.com/noam-chomsky/quote/lbk6x2x"
+ },
+  {
+  "id": "spinoza-understanding-freedom",
+  "kind": "quotation",
+  "text": "The highest activity a human being can attain is learning for understanding, because to understand is to be free.",
+  "author": "Baruch Spinoza",
+  "source": "Modern paraphrase inspired by Ethics",
+  "source_url": "https://en.wikisource.org/wiki/Ethics_(Spinoza)"
+},
+{
+  "id": "spinoza-highest-good-understanding",
+  "kind": "quotation",
+  "text": "The mind's highest good is the knowledge of God, and the mind's highest virtue is to know God.",
+  "author": "Baruch Spinoza",
+  "source": "Ethics, part IV, proposition 28",
+  "source_url": "https://en.wikisource.org/wiki/Ethics_(Spinoza)/Part_4"
+}
+]

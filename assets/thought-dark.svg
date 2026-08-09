@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="396" viewBox="0 0 1200 396" role="img" aria-labelledby="title desc">
+  <title id="title">Current research thought</title>
+  <desc id="desc">We are a way for the cosmos to know itself. — Carl Sagan</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#91a4b8" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+      .serif{font-family:Georgia,"Times New Roman",serif}
+      .label{fill:#c9a96a;font-size:11px;font-weight:700;letter-spacing:2.6px}
+      .quote{fill:#e7edf2;font-size:31px;font-style:italic}
+      .author{fill:#70d2c6;font-size:13px;font-weight:700;letter-spacing:1.5px}
+      .source{fill:#788695;font-size:10px;letter-spacing:.65px}
+      .marker{fill:#788695;font-size:10px;letter-spacing:1.6px}
+      .pulse{animation:pulse 3.2s ease-in-out infinite;transform-origin:1091px 63px}
+      .trace{stroke-dasharray:3 9;animation:trace 12s linear infinite}
+      @keyframes pulse{0%,100%{opacity:.42;transform:scale(.82)}50%{opacity:1;transform:scale(1.1)}}
+      @keyframes trace{to{stroke-dashoffset:-120}}
+      @media (prefers-reduced-motion:reduce){.pulse,.trace{animation:none}}
+    </style>
+  </defs>
+  <rect width="1200" height="396" rx="20" fill="#080b11"/>
+  <rect x="24" y="24" width="1152" height="348" rx="14" fill="#0d131b" stroke="#273441"/>
+  <rect x="36" y="36" width="1128" height="324" rx="12" fill="url(#grid)"/>
+  <path d="M76 70H324" stroke="#c9a96a" stroke-width="2"/>
+  <text x="76" y="64" class="mono label">THOUGHT // VERIFIED QUOTATION</text>
+  <text x="1124" y="64" text-anchor="end" class="mono marker">23 / 43</text>
+  <g class="serif quote">
+    <text>
+        <tspan x="104" y="182">We are a way for the cosmos to know itself.</tspan>
+    </text>
+  </g>
+  <text x="104" y="263" class="mono author">— Carl Sagan</text>
+  <a href="https://blogs.loc.gov/loc/2014/01/finding-our-place-in-the-cosmos-with-carl-sagan/" target="_blank"><text x="104" y="302" class="mono source">SOURCE // Cosmos: A Personal Voyage (1980) ↗</text></a>
+  <g opacity=".8">
+    <path class="trace" d="M918 224C967 144 1020 130 1089 75" fill="none" stroke="#70d2c6" stroke-opacity=".28"/>
+    <circle cx="919" cy="224" r="4" fill="#c9a96a"/>
+    <circle cx="1008" cy="145" r="3" fill="#70d2c6"/>
+    <circle cx="1091" cy="73" r="5" fill="#70d2c6" class="pulse" filter="url(#glow)"/>
+    <circle cx="1091" cy="73" r="31" fill="none" stroke="#70d2c6" stroke-opacity=".12"/>
+    <circle cx="1091" cy="73" r="50" fill="none" stroke="#c9a96a" stroke-opacity=".1" stroke-dasharray="2 8"/>
+  </g>
+</svg>
