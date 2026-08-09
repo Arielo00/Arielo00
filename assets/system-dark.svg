@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">ARIEL RESEARCH SYSTEM</title>
-  <desc id="desc">A dark scientific terminal-style profile with an animated question constellation for Ariel López García.</desc>
+  <desc id="desc">A dark scientific terminal-style profile with an animated universe of questions for Ariel López García.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07090e"/>
@@ -19,6 +19,10 @@
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="star-glow" x="-180%" y="-180%" width="460%" height="460%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
       .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -26,28 +30,21 @@
       .key{fill:#8795a5}.value{fill:#dce4eb}
       .pulse{animation:pulse 3.4s ease-in-out infinite;transform-origin:1058px 69px}
       .cursor{animation:blink 1.2s steps(1,end) infinite}
-      .const-line{stroke-dasharray:600;stroke-dashoffset:0;animation:discover 8s ease-in-out infinite}
-      .const-b{animation-delay:.65s}.const-c{animation-delay:1.3s}.const-d{animation-delay:1.95s}
-      .const-star{transform-box:fill-box;transform-origin:center;animation:star 3.8s ease-in-out infinite}
-      .const-star:nth-child(2){animation-delay:.45s}.const-star:nth-child(3){animation-delay:.9s}.const-star:nth-child(4){animation-delay:1.35s}
-      .const-star:nth-child(5){animation-delay:1.8s}.const-star:nth-child(6){animation-delay:2.25s}.const-star:nth-child(7){animation-delay:2.7s}
+      .field-star{transform-box:fill-box;transform-origin:center;animation:star-twinkle 6.2s ease-in-out infinite}
+      .field-star:nth-child(3n+1){animation-delay:-1.8s}.field-star:nth-child(3n+2){animation-delay:-4.1s}
+      .question-particle{transform-box:fill-box;transform-origin:center;animation:question-cross var(--period) linear var(--delay) infinite}
+      .question-node{filter:url(#star-glow)}
       .const-ripple{transform-box:fill-box;transform-origin:center;animation:ripple 2.8s ease-out infinite}
-      .count-step{opacity:0;animation-duration:8s;animation-timing-function:steps(1,end);animation-iteration-count:infinite}
-      .count-1{animation-name:count1}.count-2{animation-name:count2}.count-3{animation-name:count3}.count-4{animation-name:count4}
-      .count-5{animation-name:count5}.count-6{animation-name:count6}.count-7{opacity:1;animation-name:count7}
+      .count-step{opacity:0;animation:count-window 60s steps(1,end) infinite}
+      .count-static{opacity:1;animation:hide-static .001s forwards}
       @keyframes pulse{0%,100%{opacity:.48;transform:scale(.82)}50%{opacity:1;transform:scale(1.12)}}
       @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
-      @keyframes discover{0%,8%{stroke-dashoffset:600;opacity:.12}52%,78%{stroke-dashoffset:0;opacity:.76}100%{stroke-dashoffset:-600;opacity:.18}}
-      @keyframes star{0%,100%{opacity:.3;transform:scale(.82)}50%{opacity:1;transform:scale(1.18)}}
+      @keyframes star-twinkle{0%,100%{opacity:.24;transform:scale(.8)}50%{opacity:.82;transform:scale(1.18)}}
+      @keyframes question-cross{0%{opacity:0;transform:translateY(0)}8%{opacity:.32}31%{opacity:1;transform:translateY(78px)}48%,52%{opacity:.46;transform:translateY(125px) scale(.86)}69%{opacity:1;transform:translateY(172px)}92%{opacity:.3}100%{opacity:0;transform:translateY(250px)}}
       @keyframes ripple{0%{opacity:.8;transform:scale(.55)}80%,100%{opacity:0;transform:scale(1.38)}}
-      @keyframes count1{0%,12%{opacity:1}12.1%,100%{opacity:0}}
-      @keyframes count2{0%,12.4%{opacity:0}12.5%,25%{opacity:1}25.1%,100%{opacity:0}}
-      @keyframes count3{0%,25.4%{opacity:0}25.5%,38%{opacity:1}38.1%,100%{opacity:0}}
-      @keyframes count4{0%,38.4%{opacity:0}38.5%,51%{opacity:1}51.1%,100%{opacity:0}}
-      @keyframes count5{0%,51.4%{opacity:0}51.5%,64%{opacity:1}64.1%,100%{opacity:0}}
-      @keyframes count6{0%,64.4%{opacity:0}64.5%,77%{opacity:1}77.1%,100%{opacity:0}}
-      @keyframes count7{0%,77.4%{opacity:0}77.5%,100%{opacity:1}}
-      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.const-line,.const-star,.const-ripple,.count-step{animation:none}.cursor{opacity:1}.const-line{stroke-dashoffset:0;opacity:.62}.const-ripple{opacity:.45}.count-7{opacity:1}}
+      @keyframes count-window{0%,4.99%{opacity:1}5%,100%{opacity:0}}
+      @keyframes hide-static{to{opacity:0}}
+      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.field-star,.question-particle,.const-ripple,.count-step,.count-static{animation:none}.cursor{opacity:1}.field-star{opacity:.5}.question-particle{opacity:.78}.const-ripple{opacity:.45}.count-step{opacity:0}.count-static{opacity:1}}
     </style>
   </defs>
 
@@ -82,7 +79,7 @@
       <text x="66" y="538" class="key">favorite_question</text><text x="258" y="538" class="value">"why?"</text>
       <text x="66" y="566" class="key">debugging_mode</text><text x="258" y="566" class="value">evidence &gt; intuition</text>
       <text x="66" y="594" class="key">tabs_open</text><text x="258" y="594" class="gold">[REDACTED]</text>
-      <text x="66" y="622" class="key">music</text><text x="258" y="622" class="value">always_on</text>
+      <text x="66" y="622" class="key">training</text><text x="258" y="622" class="value">CrossFit / Karate</text>
       <text x="66" y="650" class="key">learning_state</text><text x="258" y="650" class="value">permanent</text>
       <text x="66" y="678" class="key">mental_models</text><text x="258" y="678" class="value">refactorable</text>
     </g>
@@ -92,34 +89,92 @@
   </g>
 
   <g transform="translate(824 148)">
-    <text x="0" y="0" class="mono muted" font-size="9" letter-spacing="2">FIG. 01 — QUESTION CONSTELLATION</text>
+    <text x="0" y="0" class="mono muted" font-size="9" letter-spacing="2">FIG. 01 — QUESTION UNIVERSE</text>
     <circle cx="150" cy="175" r="138" fill="none" stroke="#c9a96a" stroke-opacity=".08"/>
-    <g fill="none" stroke="#70d2c6" stroke-opacity=".38">
-      <path class="const-line const-a" d="M18 176L70 72L151 114L224 51L288 150"/>
-      <path class="const-line const-b" d="M18 176L86 271L184 249L288 150"/>
-      <path class="const-line const-c" d="M70 72L86 271M151 114L184 249M224 51L184 249"/>
+    <g fill="#91a4b8">
+      <circle class="field-star" cx="39" cy="88" r="1.4"/><circle class="field-star" cx="78" cy="48" r="1"/>
+      <circle class="field-star" cx="126" cy="61" r="1.6"/><circle class="field-star" cx="205" cy="55" r="1.1"/>
+      <circle class="field-star" cx="260" cy="89" r="1.5"/><circle class="field-star" cx="279" cy="133" r="1"/>
+      <circle class="field-star" cx="274" cy="222" r="1.7"/><circle class="field-star" cx="238" cy="273" r="1.1"/>
+      <circle class="field-star" cx="164" cy="299" r="1.5"/><circle class="field-star" cx="92" cy="280" r="1"/>
+      <circle class="field-star" cx="40" cy="226" r="1.6"/><circle class="field-star" cx="25" cy="158" r="1.1"/>
+      <circle class="field-star" cx="46" cy="119" r="1.4"/><circle class="field-star" cx="95" cy="100" r="1"/>
+      <circle class="field-star" cx="185" cy="90" r="1.5"/><circle class="field-star" cx="236" cy="130" r="1.1"/>
+      <circle class="field-star" cx="257" cy="187" r="1.6"/><circle class="field-star" cx="211" cy="240" r="1"/>
+      <circle class="field-star" cx="145" cy="267" r="1.4"/><circle class="field-star" cx="76" cy="238" r="1.1"/>
+      <circle class="field-star" cx="50" cy="188" r="1.5"/><circle class="field-star" cx="77" cy="154" r="1"/>
+      <circle class="field-star" cx="122" cy="122" r="1.4"/><circle class="field-star" cx="183" cy="126" r="1.1"/>
     </g>
-    <g fill="none" stroke="#c9a96a" stroke-opacity=".34">
-      <path class="const-line const-d" d="M151 114L150 175L184 249"/>
-      <circle cx="150" cy="175" r="47" stroke-dasharray="2 8"/>
+    <circle cx="150" cy="175" r="47" fill="none" stroke="#c9a96a" stroke-opacity=".34" stroke-dasharray="2 8"/>
+
+    <g transform="rotate(8 150 175)" style="--period:30s;--delay:-9.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#70d2c6" stroke-opacity=".22" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="5" fill="#70d2c6"/>
     </g>
-    <g class="const-stars" fill="#70d2c6">
-      <circle class="const-star" cx="18" cy="176" r="4"/><circle class="const-star" cx="70" cy="72" r="3"/>
-      <circle class="const-star" cx="151" cy="114" r="4"/><circle class="const-star" cx="224" cy="51" r="3"/>
-      <circle class="const-star" cx="288" cy="150" r="4"/><circle class="const-star" cx="86" cy="271" r="3"/>
-      <circle class="const-star" cx="184" cy="249" r="4"/>
+    <g transform="rotate(43 150 175)" style="--period:30s;--delay:-6.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="40" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="4" fill="#70d2c6"/>
+    </g>
+    <g transform="rotate(79 150 175)" style="--period:30s;--delay:-3.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="39" stroke="#c9a96a" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="4.5" fill="#c9a96a"/>
+    </g>
+    <g transform="rotate(118 150 175)" style="--period:30s;--delay:-.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#70d2c6" stroke-opacity=".22" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="5" fill="#70d2c6"/>
+    </g>
+    <g transform="rotate(156 150 175)" style="--period:30s;--delay:-27.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="40" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="4" fill="#70d2c6"/>
+    </g>
+    <g transform="rotate(197 150 175)" style="--period:30s;--delay:-24.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="39" stroke="#c9a96a" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="4.5" fill="#c9a96a"/>
+    </g>
+    <g transform="rotate(232 150 175)" style="--period:30s;--delay:-21.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#70d2c6" stroke-opacity=".22" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="5" fill="#70d2c6"/>
+    </g>
+    <g transform="rotate(268 150 175)" style="--period:30s;--delay:-18.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="40" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="3.8" fill="#70d2c6"/>
+    </g>
+    <g transform="rotate(305 150 175)" style="--period:30s;--delay:-15.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="39" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="4.7" fill="#70d2c6"/>
+    </g>
+    <g transform="rotate(337 150 175)" style="--period:30s;--delay:-12.3s">
+      <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#c9a96a" stroke-opacity=".2" stroke-linecap="round"/>
+      <circle class="question-particle question-node" cx="150" cy="50" r="4.2" fill="#c9a96a"/>
     </g>
     <circle cx="150" cy="175" r="9" fill="#c9a96a" filter="url(#glow)"/>
     <circle cx="150" cy="175" r="19" fill="none" stroke="#c9a96a" class="const-ripple"/>
     <text x="150" y="181" text-anchor="middle" fill="#07090e" class="mono" font-size="15" font-weight="700">?</text>
-    <text x="150" y="310" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION SPACE // RELATIONAL</text>
+    <text x="150" y="310" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION RAIN // RELATIONAL</text>
     <path d="M0 328H300" stroke="#26323e"/>
-    <text x="0" y="348" class="mono muted" font-size="9" letter-spacing="1.5">CONNECTIONS FOUND</text>
+    <text x="0" y="348" class="mono muted" font-size="9" letter-spacing="1.5">CONNECTIONS GENERATED</text>
     <g text-anchor="end" class="mono cyan" font-size="11" letter-spacing="1">
-      <text x="300" y="348" class="count-step count-1">01</text><text x="300" y="348" class="count-step count-2">02</text>
-      <text x="300" y="348" class="count-step count-3">03</text><text x="300" y="348" class="count-step count-4">04</text>
-      <text x="300" y="348" class="count-step count-5">05</text><text x="300" y="348" class="count-step count-6">06</text>
-      <text x="300" y="348" class="count-step count-7">07</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:0s">001</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:3s">002</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:6s">003</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:9s">004</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:12s">005</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:15s">006</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:18s">007</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:21s">008</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:24s">009</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:27s">010</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:30s">011</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:33s">012</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:36s">013</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:39s">014</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:42s">015</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:45s">016</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:48s">017</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:51s">018</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:54s">019</text>
+      <text x="300" y="348" class="count-step" style="animation-delay:57s">020</text>
+      <text x="300" y="348" class="count-static">020</text>
     </g>
   </g>
 
