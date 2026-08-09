@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">ARIEL RESEARCH SYSTEM</title>
-  <desc id="desc">A dark scientific terminal-style profile for Ariel López García.</desc>
+  <desc id="desc">A dark scientific terminal-style profile with an animated question constellation for Ariel López García.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07090e"/>
@@ -25,12 +25,29 @@
       .muted{fill:#718092}.ink{fill:#e8edf2}.cyan{fill:#70d2c6}.gold{fill:#c9a96a}
       .key{fill:#8795a5}.value{fill:#dce4eb}
       .pulse{animation:pulse 3.4s ease-in-out infinite;transform-origin:1058px 69px}
-      .scan{animation:scan 8s linear infinite}
       .cursor{animation:blink 1.2s steps(1,end) infinite}
+      .const-line{stroke-dasharray:600;stroke-dashoffset:0;animation:discover 8s ease-in-out infinite}
+      .const-b{animation-delay:.65s}.const-c{animation-delay:1.3s}.const-d{animation-delay:1.95s}
+      .const-star{transform-box:fill-box;transform-origin:center;animation:star 3.8s ease-in-out infinite}
+      .const-star:nth-child(2){animation-delay:.45s}.const-star:nth-child(3){animation-delay:.9s}.const-star:nth-child(4){animation-delay:1.35s}
+      .const-star:nth-child(5){animation-delay:1.8s}.const-star:nth-child(6){animation-delay:2.25s}.const-star:nth-child(7){animation-delay:2.7s}
+      .const-ripple{transform-box:fill-box;transform-origin:center;animation:ripple 2.8s ease-out infinite}
+      .count-step{opacity:0;animation-duration:8s;animation-timing-function:steps(1,end);animation-iteration-count:infinite}
+      .count-1{animation-name:count1}.count-2{animation-name:count2}.count-3{animation-name:count3}.count-4{animation-name:count4}
+      .count-5{animation-name:count5}.count-6{animation-name:count6}.count-7{opacity:1;animation-name:count7}
       @keyframes pulse{0%,100%{opacity:.48;transform:scale(.82)}50%{opacity:1;transform:scale(1.12)}}
-      @keyframes scan{0%{transform:translateY(-80px);opacity:0}12%{opacity:.45}88%{opacity:.18}100%{transform:translateY(790px);opacity:0}}
       @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
-      @media (prefers-reduced-motion:reduce){.pulse,.scan,.cursor{animation:none}.scan{display:none}.cursor{opacity:1}}
+      @keyframes discover{0%,8%{stroke-dashoffset:600;opacity:.12}52%,78%{stroke-dashoffset:0;opacity:.76}100%{stroke-dashoffset:-600;opacity:.18}}
+      @keyframes star{0%,100%{opacity:.3;transform:scale(.82)}50%{opacity:1;transform:scale(1.18)}}
+      @keyframes ripple{0%{opacity:.8;transform:scale(.55)}80%,100%{opacity:0;transform:scale(1.38)}}
+      @keyframes count1{0%,12%{opacity:1}12.1%,100%{opacity:0}}
+      @keyframes count2{0%,12.4%{opacity:0}12.5%,25%{opacity:1}25.1%,100%{opacity:0}}
+      @keyframes count3{0%,25.4%{opacity:0}25.5%,38%{opacity:1}38.1%,100%{opacity:0}}
+      @keyframes count4{0%,38.4%{opacity:0}38.5%,51%{opacity:1}51.1%,100%{opacity:0}}
+      @keyframes count5{0%,51.4%{opacity:0}51.5%,64%{opacity:1}64.1%,100%{opacity:0}}
+      @keyframes count6{0%,64.4%{opacity:0}64.5%,77%{opacity:1}77.1%,100%{opacity:0}}
+      @keyframes count7{0%,77.4%{opacity:0}77.5%,100%{opacity:1}}
+      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.const-line,.const-star,.const-ripple,.count-step{animation:none}.cursor{opacity:1}.const-line{stroke-dashoffset:0;opacity:.62}.const-ripple{opacity:.45}.count-7{opacity:1}}
     </style>
   </defs>
 
@@ -39,8 +56,6 @@
   <rect x="1" y="1" width="1198" height="758" rx="23" fill="none" stroke="#27313d"/>
   <rect x="32" y="32" width="1136" height="696" rx="12" fill="url(#grid)" stroke="#1d2732"/>
   <path d="M32 112H1168M782 112V728" stroke="#283441" stroke-width="1"/>
-  <path class="scan" d="M44 0H1156" stroke="#70d2c6" stroke-opacity=".22"/>
-
   <g class="mono">
     <text x="66" y="72" class="gold" font-size="13" font-weight="700" letter-spacing="3.2">ARIEL RESEARCH SYSTEM</text>
     <text x="66" y="94" class="muted" font-size="11" letter-spacing="1.7">ARIEL OS · build 26.08</text>
@@ -50,18 +65,18 @@
     <text x="66" y="158" class="cyan" font-size="15">&gt; whoami</text>
     <rect x="66" y="181" width="2" height="56" fill="#c9a96a"/>
     <text x="88" y="209" class="ink sans" font-size="28" font-weight="650" letter-spacing=".3">Ariel López García</text>
-    <text x="88" y="232" class="muted" font-size="11" letter-spacing="2.6">OBSERVER · BUILDER · PERMANENT STUDENT</text>
+    <text x="88" y="232" class="muted" font-size="11" letter-spacing="2.6">OBSERVER · BUILDER · PERMANENT LEARNER</text>
 
     <text x="66" y="280" class="value sans" font-size="16">
       <tspan x="66" dy="0">I like understanding systems from first principles,</tspan>
-      <tspan x="66" dy="25">building things, and following questions further</tspan>
-      <tspan x="66" dy="25">than I probably intended to.</tspan>
+      <tspan x="66" dy="25">building things, and learning deeply</tspan>
+      <tspan x="66" dy="25">across disciplines.</tspan>
     </text>
 
     <text x="66" y="386" class="cyan" font-size="15">&gt; ./ariel --info</text>
     <g font-size="14">
       <text x="66" y="426" class="key">default_mode</text><text x="258" y="426" class="value">curious</text>
-      <text x="66" y="454" class="key">rabbit_holes</text><text x="258" y="454" class="value">enabled</text>
+      <text x="66" y="454" class="key">complexity</text><text x="258" y="454" class="value">decompose()</text>
       <text x="66" y="482" class="key">side_quests</text><text x="258" y="482" class="value">always</text>
       <text x="66" y="510" class="key">black_boxes</text><text x="258" y="510" class="value">inspect()</text>
       <text x="66" y="538" class="key">favorite_question</text><text x="258" y="538" class="value">"why?"</text>
@@ -69,25 +84,43 @@
       <text x="66" y="594" class="key">tabs_open</text><text x="258" y="594" class="gold">[REDACTED]</text>
       <text x="66" y="622" class="key">music</text><text x="258" y="622" class="value">always_on</text>
       <text x="66" y="650" class="key">learning_state</text><text x="258" y="650" class="value">permanent</text>
-      <text x="66" y="678" class="key">certainty</text><text x="258" y="678" class="value">probabilistic</text>
+      <text x="66" y="678" class="key">mental_models</text><text x="258" y="678" class="value">refactorable</text>
     </g>
     <text x="66" y="706" class="cyan" font-size="14">curiosity</text>
     <text x="258" y="706" class="cyan" font-size="14">unbounded</text>
     <rect x="352" y="694" width="8" height="15" class="cyan cursor"/>
   </g>
 
-  <g transform="translate(824 162)">
-    <circle cx="150" cy="154" r="118" fill="none" stroke="#70d2c6" stroke-opacity=".12"/>
-    <circle cx="150" cy="154" r="78" fill="none" stroke="#c9a96a" stroke-opacity=".18" stroke-dasharray="2 9"/>
-    <ellipse cx="150" cy="154" rx="142" ry="48" fill="none" stroke="#718092" stroke-opacity=".26" transform="rotate(-19 150 154)"/>
-    <path d="M39 76L99 33L197 48L262 120L243 219L154 274L65 235L39 76Z" fill="none" stroke="#718092" stroke-opacity=".16"/>
-    <g fill="#70d2c6">
-      <circle cx="39" cy="76" r="3"/><circle cx="99" cy="33" r="2"/><circle cx="197" cy="48" r="3"/>
-      <circle cx="262" cy="120" r="2"/><circle cx="243" cy="219" r="3"/><circle cx="154" cy="274" r="2"/><circle cx="65" cy="235" r="2"/>
+  <g transform="translate(824 148)">
+    <text x="0" y="0" class="mono muted" font-size="9" letter-spacing="2">FIG. 01 — QUESTION CONSTELLATION</text>
+    <circle cx="150" cy="175" r="138" fill="none" stroke="#c9a96a" stroke-opacity=".08"/>
+    <g fill="none" stroke="#70d2c6" stroke-opacity=".38">
+      <path class="const-line const-a" d="M18 176L70 72L151 114L224 51L288 150"/>
+      <path class="const-line const-b" d="M18 176L86 271L184 249L288 150"/>
+      <path class="const-line const-c" d="M70 72L86 271M151 114L184 249M224 51L184 249"/>
     </g>
-    <circle cx="150" cy="154" r="8" fill="#c9a96a" fill-opacity=".88" filter="url(#glow)"/>
-    <path d="M150 140V92M164 154H214M150 168V219M136 154H87" stroke="#c9a96a" stroke-opacity=".25"/>
-    <text x="150" y="325" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION SPACE // UNBOUNDED</text>
+    <g fill="none" stroke="#c9a96a" stroke-opacity=".34">
+      <path class="const-line const-d" d="M151 114L150 175L184 249"/>
+      <circle cx="150" cy="175" r="47" stroke-dasharray="2 8"/>
+    </g>
+    <g class="const-stars" fill="#70d2c6">
+      <circle class="const-star" cx="18" cy="176" r="4"/><circle class="const-star" cx="70" cy="72" r="3"/>
+      <circle class="const-star" cx="151" cy="114" r="4"/><circle class="const-star" cx="224" cy="51" r="3"/>
+      <circle class="const-star" cx="288" cy="150" r="4"/><circle class="const-star" cx="86" cy="271" r="3"/>
+      <circle class="const-star" cx="184" cy="249" r="4"/>
+    </g>
+    <circle cx="150" cy="175" r="9" fill="#c9a96a" filter="url(#glow)"/>
+    <circle cx="150" cy="175" r="19" fill="none" stroke="#c9a96a" class="const-ripple"/>
+    <text x="150" y="181" text-anchor="middle" fill="#07090e" class="mono" font-size="15" font-weight="700">?</text>
+    <text x="150" y="310" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION SPACE // RELATIONAL</text>
+    <path d="M0 328H300" stroke="#26323e"/>
+    <text x="0" y="348" class="mono muted" font-size="9" letter-spacing="1.5">CONNECTIONS FOUND</text>
+    <g text-anchor="end" class="mono cyan" font-size="11" letter-spacing="1">
+      <text x="300" y="348" class="count-step count-1">01</text><text x="300" y="348" class="count-step count-2">02</text>
+      <text x="300" y="348" class="count-step count-3">03</text><text x="300" y="348" class="count-step count-4">04</text>
+      <text x="300" y="348" class="count-step count-5">05</text><text x="300" y="348" class="count-step count-6">06</text>
+      <text x="300" y="348" class="count-step count-7">07</text>
+    </g>
   </g>
 
   <g class="mono" font-size="9" fill="#536171" letter-spacing="1.5">
@@ -95,7 +128,7 @@
     <path d="M818 603H1136" stroke="#26323e"/>
     <circle cx="828" cy="603" r="3" fill="#70d2c6"/><circle cx="965" cy="603" r="3" fill="#c9a96a"/><circle cx="1090" cy="603" r="3" fill="#70d2c6"/>
     <text x="818" y="642">CURRENT STATE</text>
-    <text x="818" y="670" fill="#b8c3cd" font-size="12" letter-spacing=".5">one question away from</text>
-    <text x="818" y="690" fill="#b8c3cd" font-size="12" letter-spacing=".5">another rabbit hole</text>
+    <text x="818" y="670" fill="#b8c3cd" font-size="12" letter-spacing=".5">understanding is</text>
+    <text x="818" y="690" fill="#b8c3cd" font-size="12" letter-spacing=".5">a moving target</text>
   </g>
 </svg>

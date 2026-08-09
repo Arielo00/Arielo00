@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">ARIEL RESEARCH SYSTEM</title>
-  <desc id="desc">A light research-paper-style profile for Ariel López García.</desc>
+  <desc id="desc">A light research-paper-style profile with an animated hypothesis observatory for Ariel López García.</desc>
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8f5ed"/>
@@ -12,6 +12,10 @@
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
       <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1e2a31" flood-opacity=".09"/>
     </filter>
+    <linearGradient id="sweep-light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#147c78" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#147c78" stop-opacity="0"/>
+    </linearGradient>
     <style>
       .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
       .serif{font-family:Georgia,"Times New Roman",serif}
@@ -20,11 +24,19 @@
       .key{fill:#6f7778}.value{fill:#263b43}
       .pulse{animation:pulse 3.4s ease-in-out infinite;transform-origin:1058px 69px}
       .cursor{animation:blink 1.2s steps(1,end) infinite}
-      .orbit{animation:drift 16s linear infinite;transform-box:fill-box;transform-origin:center}
+      .sweep{animation:sweep 7s linear infinite;transform-origin:158px 168px}
+      .observatory-node{transform-box:fill-box;transform-origin:center;animation:node 3.2s ease-in-out infinite}
+      .observatory-node:nth-child(2){animation-delay:.55s}.observatory-node:nth-child(3){animation-delay:1.1s}
+      .observatory-node:nth-child(4){animation-delay:1.65s}.observatory-node:nth-child(5){animation-delay:2.2s}
+      .observatory-core{transform-box:fill-box;transform-origin:center;animation:core 2.8s ease-out infinite}
+      .route-signal{fill:#147c78;animation:route 6s ease-in-out infinite}
       @keyframes pulse{0%,100%{opacity:.5;transform:scale(.82)}50%{opacity:1;transform:scale(1.1)}}
       @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
-      @keyframes drift{to{transform:rotate(360deg)}}
-      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.orbit{animation:none}.cursor{opacity:1}}
+      @keyframes sweep{to{transform:rotate(360deg)}}
+      @keyframes node{0%,100%{opacity:.3;transform:scale(.82)}50%{opacity:1;transform:scale(1.18)}}
+      @keyframes core{0%{opacity:.72;transform:scale(.55)}80%,100%{opacity:0;transform:scale(1.35)}}
+      @keyframes route{0%,8%{transform:translateX(0);fill:#147c78;opacity:0}12%{transform:translateX(0);fill:#147c78;opacity:1}40%{transform:translateX(137px);fill:#147c78}40.1%,55%{transform:translateX(137px);fill:#9a6d2f}85%{transform:translateX(262px);fill:#9a6d2f}85.1%,94%{transform:translateX(262px);fill:#147c78;opacity:1}100%{transform:translateX(262px);fill:#147c78;opacity:0}}
+      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.sweep,.observatory-node,.observatory-core,.route-signal{animation:none}.cursor{opacity:1}.observatory-core{opacity:.42}.route-signal{fill:#147c78}}
     </style>
   </defs>
 
@@ -44,18 +56,18 @@
     <text x="68" y="158" class="teal" font-size="15">&gt; whoami</text>
     <text x="68" y="205" class="ink serif" font-size="31">Ariel López García</text>
     <path d="M68 218H395" stroke="#9a6d2f" stroke-width="2"/>
-    <text x="68" y="240" class="muted" font-size="10" letter-spacing="2.5">OBSERVER · BUILDER · PERMANENT STUDENT</text>
+    <text x="68" y="240" class="muted" font-size="10" letter-spacing="2.5">OBSERVER · BUILDER · PERMANENT LEARNER</text>
 
     <text x="68" y="287" class="value serif" font-size="17" font-style="italic">
       <tspan x="68" dy="0">I like understanding systems from first principles,</tspan>
-      <tspan x="68" dy="26">building things, and following questions further</tspan>
-      <tspan x="68" dy="26">than I probably intended to.</tspan>
+      <tspan x="68" dy="26">building things, and learning deeply</tspan>
+      <tspan x="68" dy="26">across disciplines.</tspan>
     </text>
 
     <text x="68" y="390" class="teal" font-size="15">&gt; ./ariel --info</text>
     <g font-size="14">
       <text x="68" y="430" class="key">default_mode</text><text x="260" y="430" class="value">curious</text>
-      <text x="68" y="458" class="key">rabbit_holes</text><text x="260" y="458" class="value">enabled</text>
+      <text x="68" y="458" class="key">complexity</text><text x="260" y="458" class="value">decompose()</text>
       <text x="68" y="486" class="key">side_quests</text><text x="260" y="486" class="value">always</text>
       <text x="68" y="514" class="key">black_boxes</text><text x="260" y="514" class="value">inspect()</text>
       <text x="68" y="542" class="key">favorite_question</text><text x="260" y="542" class="value">"why?"</text>
@@ -63,7 +75,7 @@
       <text x="68" y="598" class="key">tabs_open</text><text x="260" y="598" class="brass">[REDACTED]</text>
       <text x="68" y="626" class="key">music</text><text x="260" y="626" class="value">always_on</text>
       <text x="68" y="654" class="key">learning_state</text><text x="260" y="654" class="value">permanent</text>
-      <text x="68" y="682" class="key">certainty</text><text x="260" y="682" class="value">probabilistic</text>
+      <text x="68" y="682" class="key">mental_models</text><text x="260" y="682" class="value">refactorable</text>
     </g>
     <text x="68" y="710" class="teal" font-size="14">curiosity</text>
     <text x="260" y="710" class="teal" font-size="14">unbounded</text>
@@ -71,29 +83,33 @@
   </g>
 
   <g transform="translate(816 148)">
-    <text x="0" y="0" class="mono muted" font-size="9" letter-spacing="2">FIG. 01 — A QUESTION, OBSERVED</text>
+    <text x="0" y="0" class="mono muted" font-size="9" letter-spacing="2">FIG. 01 — HYPOTHESIS OBSERVATORY</text>
     <circle cx="158" cy="168" r="119" fill="#f4f0e6" stroke="#9eaaac" stroke-width="1"/>
-    <circle cx="158" cy="168" r="82" fill="none" stroke="#147c78" stroke-opacity=".36" stroke-dasharray="1 8"/>
-    <g class="orbit">
-      <ellipse cx="158" cy="168" rx="144" ry="51" fill="none" stroke="#9a6d2f" stroke-opacity=".55" transform="rotate(-18 158 168)"/>
-      <circle cx="28" cy="222" r="4" fill="#9a6d2f"/>
+    <circle cx="158" cy="168" r="86" fill="none" stroke="#9a6d2f" stroke-opacity=".35" stroke-dasharray="2 9"/>
+    <circle cx="158" cy="168" r="49" fill="none" stroke="#147c78" stroke-opacity=".28"/>
+    <path d="M39 168H277M158 49V287" stroke="#667176" stroke-opacity=".18"/>
+    <g class="sweep">
+      <path d="M158 168L158 49A119 119 0 0 1 257 102Z" fill="url(#sweep-light)"/>
+      <path d="M158 168L158 49" stroke="#147c78" stroke-opacity=".72"/>
     </g>
-    <path d="M47 90L107 47L205 62L270 134L251 233L162 288L73 249L47 90Z" fill="none" stroke="#172c35" stroke-opacity=".16"/>
     <g fill="#147c78">
-      <circle cx="47" cy="90" r="3"/><circle cx="107" cy="47" r="2"/><circle cx="205" cy="62" r="3"/>
-      <circle cx="270" cy="134" r="2"/><circle cx="251" cy="233" r="3"/><circle cx="162" cy="288" r="2"/><circle cx="73" cy="249" r="2"/>
+      <circle class="observatory-node" cx="84" cy="86" r="4"/><circle class="observatory-node" cx="243" cy="110" r="3"/>
+      <circle class="observatory-node" cx="268" cy="210" r="4"/><circle class="observatory-node" cx="113" cy="259" r="3"/>
+      <circle class="observatory-node" cx="54" cy="199" r="3"/>
     </g>
     <circle cx="158" cy="168" r="9" fill="#9a6d2f"/>
-    <path d="M158 151V100M175 168H226M158 185V236M141 168H90" stroke="#9a6d2f" stroke-opacity=".38"/>
-    <text x="158" y="339" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION SPACE // UNBOUNDED</text>
+    <circle cx="158" cy="168" r="20" fill="none" stroke="#9a6d2f" class="observatory-core"/>
+    <text x="158" y="174" text-anchor="middle" fill="#f4f0e6" class="mono" font-size="15" font-weight="700">?</text>
+    <text x="158" y="339" text-anchor="middle" class="mono muted" font-size="10" letter-spacing="2">QUESTION SPACE // OBSERVING</text>
   </g>
 
   <g class="mono" font-size="9" fill="#667176" letter-spacing="1.5">
     <text x="818" y="585">OBSERVE</text><text x="955" y="585">MODEL</text><text x="1080" y="585">TEST</text>
     <path d="M818 603H1136" stroke="#a9a294"/>
     <circle cx="828" cy="603" r="3" fill="#147c78"/><circle cx="965" cy="603" r="3" fill="#9a6d2f"/><circle cx="1090" cy="603" r="3" fill="#147c78"/>
+    <circle cx="828" cy="603" r="5" class="route-signal"/>
     <text x="818" y="642">MARGIN NOTE</text>
-    <text x="818" y="670" fill="#32464d" font-size="12" letter-spacing=".4">one question away from</text>
-    <text x="818" y="690" fill="#32464d" font-size="12" letter-spacing=".4">another rabbit hole</text>
+    <text x="818" y="670" fill="#32464d" font-size="12" letter-spacing=".4">every answer changes</text>
+    <text x="818" y="690" fill="#32464d" font-size="12" letter-spacing=".4">the next question</text>
   </g>
 </svg>
