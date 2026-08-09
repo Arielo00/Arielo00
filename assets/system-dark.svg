@@ -34,6 +34,8 @@
       .field-star:nth-child(3n+1){animation-delay:-1.8s}.field-star:nth-child(3n+2){animation-delay:-4.1s}
       .question-particle{transform-box:fill-box;transform-origin:center;animation:question-cross var(--period) linear var(--delay) infinite}
       .question-node{filter:url(#star-glow)}
+      .question-link{transform-box:fill-box;transform-origin:center bottom;opacity:0;animation:connection-inside var(--period) linear var(--delay) infinite}
+      .entry-mark{transform-box:fill-box;transform-origin:center;opacity:0;animation:entry-detected var(--period) ease-out var(--delay) infinite}
       .const-ripple{transform-box:fill-box;transform-origin:center;animation:ripple 2.8s ease-out infinite}
       .count-step{opacity:0;animation:count-window 60s steps(1,end) infinite}
       .count-static{opacity:1;animation:hide-static .001s forwards}
@@ -41,10 +43,12 @@
       @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
       @keyframes star-twinkle{0%,100%{opacity:.24;transform:scale(.8)}50%{opacity:.82;transform:scale(1.18)}}
       @keyframes question-cross{0%{opacity:0;transform:translateY(0)}8%{opacity:.32}31%{opacity:1;transform:translateY(78px)}48%,52%{opacity:.46;transform:translateY(125px) scale(.86)}69%{opacity:1;transform:translateY(172px)}92%{opacity:.3}100%{opacity:0;transform:translateY(250px)}}
+      @keyframes connection-inside{0%,30.9%{opacity:0;transform:scaleY(.376)}31%{opacity:.42;transform:scaleY(.376)}48%,52%{opacity:.28;transform:scaleY(0)}69%{opacity:.38;transform:scaleY(-.376)}69.1%,100%{opacity:0;transform:scaleY(-.376)}}
+      @keyframes entry-detected{0%,30.9%{opacity:0;transform:scale(.65)}31%{opacity:.76;transform:scale(.78)}34%,100%{opacity:0;transform:scale(1.85)}}
       @keyframes ripple{0%{opacity:.8;transform:scale(.55)}80%,100%{opacity:0;transform:scale(1.38)}}
       @keyframes count-window{0%,4.99%{opacity:1}5%,100%{opacity:0}}
       @keyframes hide-static{to{opacity:0}}
-      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.field-star,.question-particle,.const-ripple,.count-step,.count-static{animation:none}.cursor{opacity:1}.field-star{opacity:.5}.question-particle{opacity:.78}.const-ripple{opacity:.45}.count-step{opacity:0}.count-static{opacity:1}}
+      @media (prefers-reduced-motion:reduce){.pulse,.cursor,.field-star,.question-particle,.question-link,.entry-mark,.const-ripple,.count-step,.count-static{animation:none}.cursor{opacity:1}.field-star{opacity:.5}.question-particle{opacity:.78}.question-link,.entry-mark{opacity:0}.const-ripple{opacity:.45}.count-step{opacity:0}.count-static{opacity:1}}
     </style>
   </defs>
 
@@ -108,42 +112,62 @@
     <circle cx="150" cy="175" r="47" fill="none" stroke="#c9a96a" stroke-opacity=".34" stroke-dasharray="2 8"/>
 
     <g transform="rotate(8 150 175)" style="--period:30s;--delay:-9.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#70d2c6" stroke-opacity=".22" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="5" fill="#70d2c6"/>
     </g>
     <g transform="rotate(43 150 175)" style="--period:30s;--delay:-6.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="40" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="4" fill="#70d2c6"/>
     </g>
     <g transform="rotate(79 150 175)" style="--period:30s;--delay:-3.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#c9a96a" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="39" stroke="#c9a96a" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="4.5" fill="#c9a96a"/>
     </g>
     <g transform="rotate(118 150 175)" style="--period:30s;--delay:-.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#70d2c6" stroke-opacity=".22" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="5" fill="#70d2c6"/>
     </g>
     <g transform="rotate(156 150 175)" style="--period:30s;--delay:-27.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="40" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="4" fill="#70d2c6"/>
     </g>
     <g transform="rotate(197 150 175)" style="--period:30s;--delay:-24.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#c9a96a" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="39" stroke="#c9a96a" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="4.5" fill="#c9a96a"/>
     </g>
     <g transform="rotate(232 150 175)" style="--period:30s;--delay:-21.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#70d2c6" stroke-opacity=".22" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="5" fill="#70d2c6"/>
     </g>
     <g transform="rotate(268 150 175)" style="--period:30s;--delay:-18.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="40" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="3.8" fill="#70d2c6"/>
     </g>
     <g transform="rotate(305 150 175)" style="--period:30s;--delay:-15.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#70d2c6" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="39" stroke="#70d2c6" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="4.7" fill="#70d2c6"/>
     </g>
     <g transform="rotate(337 150 175)" style="--period:30s;--delay:-12.3s">
+      <line class="question-link" x1="150" y1="50" x2="150" y2="175" stroke="#c9a96a" stroke-width=".85"/>
+      <circle class="entry-mark" cx="150" cy="128" r="3.8" fill="none" stroke="#c9a96a" stroke-width="1"/>
       <line class="question-particle" x1="150" y1="50" x2="150" y2="38" stroke="#c9a96a" stroke-opacity=".2" stroke-linecap="round"/>
       <circle class="question-particle question-node" cx="150" cy="50" r="4.2" fill="#c9a96a"/>
     </g>
