@@ -174,7 +174,7 @@ def render_svg(
       .author{{fill:{theme['accent']};font-size:13px;font-weight:700;letter-spacing:1.5px}}
       .source{{fill:{theme['muted']};font-size:10px;letter-spacing:.65px}}
       .marker{{fill:{theme['muted']};font-size:10px;letter-spacing:1.6px}}
-      .pulse{{animation:pulse 3.2s ease-in-out infinite;transform-origin:1091px 63px}}
+      .pulse{{animation:pulse 3.2s ease-in-out infinite;transform-origin:1091px 73px}}
       .trace{{stroke-dasharray:3 9;animation:trace 12s linear infinite}}
       @keyframes pulse{{0%,100%{{opacity:.42;transform:scale(.82)}}50%{{opacity:1;transform:scale(1.1)}}}}
       @keyframes trace{{to{{stroke-dashoffset:-120}}}}
@@ -199,7 +199,7 @@ def render_svg(
     <circle cx="919" cy="224" r="4" fill="{theme['secondary']}"/>
     <circle cx="1008" cy="145" r="3" fill="{theme['accent']}"/>
     <circle cx="1091" cy="73" r="5" fill="{theme['accent']}" class="pulse" filter="url(#glow)"/>
-    <circle cx="1091" cy="73" r="31" fill="none" stroke="{theme['accent']}" stroke-opacity=".12"/>
+    <circle cx="1091" cy="73" r="38" fill="none" stroke="{theme['accent']}" stroke-opacity=".12"/>
     <circle cx="1091" cy="73" r="50" fill="none" stroke="{theme['secondary']}" stroke-opacity=".1" stroke-dasharray="2 8"/>
   </g>
 </svg>
