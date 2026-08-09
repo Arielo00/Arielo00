@@ -28,6 +28,8 @@ research_policy   follow the interesting question
 known_issue       one answer may open seven new tabs
 preferred_tools   first principles, evidence, unreasonable curiosity
 exit_condition    understanding &gt; appearance of understanding
+optimization      systems... including myself
+discipline        non-negotiable
   </pre>
 </details>
 
